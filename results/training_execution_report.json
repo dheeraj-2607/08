@@ -1,0 +1,137 @@
+{
+  "pipeline": "X-Resilience-WDS Spatio-Temporal GNN Forecasting Anomaly Detection",
+  "dataset_files": {
+    "train": "data/raw/BATADAL_dataset03.csv",
+    "validation": "data/raw/BATADAL_dataset04.csv",
+    "test": "data/raw/BATADAL_test_dataset.csv"
+  },
+  "model_architecture": "SpatioTemporalGNN",
+  "num_trainable_parameters": 95236,
+  "mapped_sensors_count": 43,
+  "adjacency_nonzero_count": 345,
+  "training_time_seconds": 22.81,
+  "epochs": 20,
+  "checkpoint_path": "models\\detection_gnn.pt",
+  "calibrated_threshold": 3.2949929237365723,
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "train_mse_loss": 0.639213,
+      "calib_mse_loss": 0.435489
+    },
+    {
+      "epoch": 2,
+      "train_mse_loss": 0.504998,
+      "calib_mse_loss": 0.391242
+    },
+    {
+      "epoch": 3,
+      "train_mse_loss": 0.474589,
+      "calib_mse_loss": 0.370916
+    },
+    {
+      "epoch": 4,
+      "train_mse_loss": 0.460518,
+      "calib_mse_loss": 0.363462
+    },
+    {
+      "epoch": 5,
+      "train_mse_loss": 0.452051,
+      "calib_mse_loss": 0.358565
+    },
+    {
+      "epoch": 6,
+      "train_mse_loss": 0.445826,
+      "calib_mse_loss": 0.35565
+    },
+    {
+      "epoch": 7,
+      "train_mse_loss": 0.442659,
+      "calib_mse_loss": 0.351881
+    },
+    {
+      "epoch": 8,
+      "train_mse_loss": 0.43807,
+      "calib_mse_loss": 0.349626
+    },
+    {
+      "epoch": 9,
+      "train_mse_loss": 0.434046,
+      "calib_mse_loss": 0.348246
+    },
+    {
+      "epoch": 10,
+      "train_mse_loss": 0.431681,
+      "calib_mse_loss": 0.345039
+    },
+    {
+      "epoch": 11,
+      "train_mse_loss": 0.428486,
+      "calib_mse_loss": 0.342077
+    },
+    {
+      "epoch": 12,
+      "train_mse_loss": 0.426395,
+      "calib_mse_loss": 0.34381
+    },
+    {
+      "epoch": 13,
+      "train_mse_loss": 0.423394,
+      "calib_mse_loss": 0.338887
+    },
+    {
+      "epoch": 14,
+      "train_mse_loss": 0.421042,
+      "calib_mse_loss": 0.339593
+    },
+    {
+      "epoch": 15,
+      "train_mse_loss": 0.418836,
+      "calib_mse_loss": 0.338898
+    },
+    {
+      "epoch": 16,
+      "train_mse_loss": 0.417091,
+      "calib_mse_loss": 0.340044
+    },
+    {
+      "epoch": 17,
+      "train_mse_loss": 0.413031,
+      "calib_mse_loss": 0.337397
+    },
+    {
+      "epoch": 18,
+      "train_mse_loss": 0.413183,
+      "calib_mse_loss": 0.337465
+    },
+    {
+      "epoch": 19,
+      "train_mse_loss": 0.411976,
+      "calib_mse_loss": 0.341551
+    },
+    {
+      "epoch": 20,
+      "train_mse_loss": 0.409107,
+      "calib_mse_loss": 0.334778
+    }
+  ],
+  "validation_metrics": {
+    "metric_category": "DETECTION_METRICS",
+    "threshold": 3.2949929237365723,
+    "samples": 1292,
+    "attack_samples": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "roc_auc": null,
+    "pr_auc": null,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": {
+      "TN": 1292,
+      "FP": 0,
+      "FN": 0,
+      "TP": 0
+    },
+    "localization_note": "These metrics evaluate window-level binary attack detection. Component-level localization precision/recall is a separate metric category evaluated in Phase 3 (Multi-level Localization)."
+  }
+}
