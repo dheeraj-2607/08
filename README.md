@@ -138,22 +138,22 @@ What is happening in this dashboard screenshot:
 In practical terms, the dashboard is translating the model’s computed anomaly signal into a readable operational timeline so engineers can review when abnormal behavior began, how severe it was, and which sensors contributed most strongly to the deviation.
 
 ![Dashboard screenshot](outputs/Screenshot%20(62).png)
-Dashboard Overview:The X-Resilience-WDS dashboard provides an overview of the water distribution system monitoring framework, including anomaly detection, sensor attribution, topology mapping, ground-truth validation, and interactive simulation. It displays monitored sensor categories and provides controls to configure and analyze different operational disturbances.
+Dashboard Overview : The X-Resilience-WDS dashboard provides an overview of the water distribution system monitoring framework, including anomaly detection, sensor attribution, topology mapping, ground-truth validation, and interactive simulation. It displays monitored sensor categories and provides controls to configure and analyze different operational disturbances.
 
 ![Dashboard screenshot](outputs/Screenshot%20(63).png)
-Anomaly Detection and Simulation: This section allows users to simulate disturbances in monitored components by selecting the component, disturbance type, magnitude, and duration. It displays the affected sensor, baseline and simulated anomaly scores, detection threshold, and model response. The signal plot compares normal and disturbed sensor behavior, while the score chart indicates whether the simulated anomaly exceeds the threshold.
+Anomaly Detection and Simulation : This section allows users to simulate disturbances in monitored components by selecting the component, disturbance type, magnitude, and duration. It displays the affected sensor, baseline and simulated anomaly scores, detection threshold, and model response. The signal plot compares normal and disturbed sensor behavior, while the score chart indicates whether the simulated anomaly exceeds the threshold.
 
 ![Dashboard screenshot](outputs/Screenshot%20(64).png)
-Root-Cause Analysis and Impact Assessment: This section identifies the suspected source of abnormal behavior using model-based evidence and the configured disturbance information. It traces the affected component through connected network nodes and neighboring sensors, examines potential alternative routes, and provides recommended mitigation actions for investigating and resolving the disturbance.
+Root-Cause Analysis and Impact Assessment : This section identifies the suspected source of abnormal behavior using model-based evidence and the configured disturbance information. It traces the affected component through connected network nodes and neighboring sensors, examines potential alternative routes, and provides recommended mitigation actions for investigating and resolving the disturbance.
 
 ![Dashboard screenshot](outputs/Screenshot%20(65).png)
-Explainable AI Analysis: This section uses SHAP and LIME to explain the sensors contributing to the model's anomaly prediction. It compares the feature importance produced by both methods and maps the selected sensors to their corresponding physical components and topology regions. An agreement indicator highlights differences between the explanations to support cautious interpretation.
+Explainable AI Analysis : This section uses SHAP and LIME to explain the sensors contributing to the model's anomaly prediction. It compares the feature importance produced by both methods and maps the selected sensors to their corresponding physical components and topology regions. An agreement indicator highlights differences between the explanations to support cautious interpretation.
 
 ![Dashboard screenshot](outputs/Screenshot%20(66).png)
-Explainable Incident Summary: This section consolidates the simulation results into a structured incident report containing the affected component, anomaly score, detection threshold, primary evidence, root-cause hypothesis, network impact, SHAP and LIME results, and recommended response. It provides a concise overview for understanding and documenting the simulated incident.
+Explainable Incident Summary : This section consolidates the simulation results into a structured incident report containing the affected component, anomaly score, detection threshold, primary evidence, root-cause hypothesis, network impact, SHAP and LIME results, and recommended response. It provides a concise overview for understanding and documenting the simulated incident.
 
 ![Dashboard screenshot](outputs/Screenshot%20(67).png)
-Dashboard Controls: The sidebar provides controls for selecting the anomaly timeline's display scale and setting a minimum operational severity filter. Users can switch between logarithmic and raw statistical anomaly scores and filter events according to the configured severity threshold, making the displayed results easier to investigate.
+Dashboard Controls : The sidebar provides controls for selecting the anomaly timeline's display scale and setting a minimum operational severity filter. Users can switch between logarithmic and raw statistical anomaly scores and filter events according to the configured severity threshold, making the displayed results easier to investigate.
 
 
 
